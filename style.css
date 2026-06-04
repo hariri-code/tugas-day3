@@ -1,0 +1,151 @@
+.navbar {
+  padding: 15px 50px;
+  background-color: rgb(177, 151, 252) !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+/* JUDUL LEAVE MESSAGE */
+.container > h1:first-child {
+  grid-column: 1;
+  background: rgb(177, 151, 252);
+  color: white;
+  padding: 15px;
+  font-size: 28px;
+  margin-bottom: -25px;
+}
+
+/* FORM */
+#userForm {
+  grid-column: 1;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 25px;
+}
+
+#userForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#userForm input,
+#userForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+#userForm textarea {
+  height: 140px;
+  resize: none;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: rgb(177, 151, 252);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background: rgb(177, 151, 252);
+}
+
+/* BOX NEW MESSAGE */
+.card {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  background: white;
+  border: 1px solid #999;
+  padding: 15px;
+  min-height: 350px;
+}
+
+.card h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* TEMPAT CARD PESAN */
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* CARD PESAN YANG DIBUAT JAVASCRIPT */
+.message-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-card h4 {
+  color: rgb(177, 151, 252);
+  margin-bottom: 10px;
+}
+
+.message-card p {
+  margin: 0;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(232, 228, 234);
+}
+footer p {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .container > h1:first-child {
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+
+  #userForm {
+    grid-column: 1;
+  }
+
+  .card {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
