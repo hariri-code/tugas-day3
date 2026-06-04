@@ -21,7 +21,6 @@ body {
   align-items: start;
 }
 
-/* JUDUL LEAVE MESSAGE */
 .container > h1:first-child {
   grid-column: 1;
   background: rgb(177, 151, 252);
@@ -30,8 +29,6 @@ body {
   font-size: 28px;
   margin-bottom: -25px;
 }
-
-/* FORM */
 #userForm {
   grid-column: 1;
   background: white;
@@ -74,7 +71,6 @@ body {
   background: rgb(177, 151, 252);
 }
 
-/* BOX NEW MESSAGE */
 .card {
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -91,14 +87,12 @@ body {
   padding-bottom: 10px;
 }
 
-/* TEMPAT CARD PESAN */
 .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-/* CARD PESAN YANG DIBUAT JAVASCRIPT */
 .message-card {
   background: white;
   border: 1px solid #ddd;
